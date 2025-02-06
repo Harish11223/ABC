@@ -4,14 +4,16 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Stack } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Stack } from "@mui/material";
 import HeadphonesOutlinedIcon from "@mui/icons-material/HeadphonesOutlined";
 import { Chip } from "@mui/material";
 import WidgetsRoundedIcon from "@mui/icons-material/WidgetsRounded";
@@ -45,8 +47,8 @@ export default function Page() {
             </p>
           </div>
 
-          <div class="flex">
-            <div class="w-[20%] flex flex-col-reverse">
+          <div className="flex">
+            <div className="w-[20%] flex flex-col-reverse">
               <Card
                 sx={{
                   maxWidth: 250,
@@ -99,14 +101,14 @@ export default function Page() {
                         fontSize: "12px",
                       }}
                     >
-                      More than 500  articles on educational topics
+                      More than 500 articles on educational topics
                     </Typography>
                     <div className="flex">
                       <a
                         href="#"
                         className="text-sm font-bold text-purple-600 rounded-full px-2 flex items-center space-x-2 hover:text-purple-900"
                       >
-                        <span className= "">View All</span>
+                        <span className="">View All</span>
                         <i className="fa-solid fa-circle-arrow-right text-purple-800"></i>
                       </a>
                     </div>
@@ -142,6 +144,15 @@ export default function Page() {
         </div>
 
         <div className="flex justify-center my-8">
+          <span className="items-center justify-center text-md">
+            Experience top-notch English language with passionate teachers,
+            interactive
+            <br />
+            lessons, and modern facilities at our school. Empower skills for
+            personal
+            <br />
+            and professional success.
+          </span>
           <span className="items-center justify-center text-md">
             Experience top-notch English language with passionate teachers,
             interactive
@@ -233,21 +244,24 @@ export default function Page() {
 
               <div className="grid grid-flow-row md:grid-flow-col gap-5">
                 <div>
-                  <div className="w-full mx-3 flex-shrink-0 bg-gray-100 rounded-lg shadow-md hover:bg-gray-400 hover:text-white transition-colors duration-700 ease-in-out overflow-hidden">
-                    <div className="">
-                      <img
+                  <div className="w-full mx-3 flex-shrink-0 bg-gray-100 rounded-lg shadow-md hover:bg-gray-400 hover:text-white transition-colors duration-700 ease-in-out">
+                    <div className="p-4 h-60 rounded-lg">
+                      <Image
                         src="/images/dalle.png"
                         alt="image here"
-                        className="w-[60%] mx-auto mt-2"
+                        className="sm:w-[65%] mx-auto mb-4 rounded-lg"
+                        objectFit="cover"
+                        width= {500}
+                        height= {500}
                       />
                     </div>
-                    <div className="p-4 h-1/2 flex flex-col justify-between">
+                    <div className="p-4">
                       <h3 className="text-xl font-semibold my-2">
                         Habit of Speaking
                       </h3>
                       <p className="text-sm">
-                        The habitual use of description language while speaking is commonly referred to as "description speech."
-                        This communication...
+                        The habitual use of descriptive language while speaking is commonly referred to as 
+                        "descriptive speech". This communication...
                       </p>
                       <button className="w-full my-5 p-2 hover:bg-[#200c66] text-center border-2 border-[#200c66] rounded-full">
                         Go to Podcast
@@ -279,8 +293,8 @@ export default function Page() {
                         Run and Talk
                       </h3>
                       <p className="text-sm">
-                        Running and talking simultaneously can be challenging, but with practice, it's possible to do both effectively.
-                        Here are some tips...
+                        Running and talking simultaneously can be challenging, but with practice, it's possible 
+                        to do both effectively. Here are some tips...
                       </p>
                       <button className="w-full my-5 p-2 hover:bg-[#200c66] text-center border-2 border-[#200c66] rounded-full">
                         Go to Podcast
@@ -331,7 +345,7 @@ export default function Page() {
                       </div>
                     </div>
                     <p className="text-sm">
-                      Our podcasts can inspire you not on;y to speak English everyday but also to think in it.
+                      Our podcasts can inspire you not only to speak English but also to think in it.
                     </p>
                   </div>
                 </div>
@@ -491,38 +505,46 @@ export default function Page() {
             <div className="grid grid-cols-2 rounded-xl">
               {/* Image 1 */}
               <div className="relative h-24 rounded-lg overflow-hidden m-2">
-                <img
+                <Image
                   src="/images/dalle.png"
                   alt="Image 1"
-                  layout="fill"
+                  // layout="fill"
                   objectFit="cover"
+                  width= {500}
+                  height= {500}
                 />
               </div>
               {/* Image 2 */}
               <div className="relative h-24 rounded-lg overflow-hidden m-2">
-                <img
+                <Image
                   src="/images/dalle.png"
                   alt="Image 2"
-                  layout="fill"
+                  // layout="fill"
                   objectFit="cover"
+                  width= {500}
+                  height= {500}
                 />
               </div>
               {/* Image 3 */}
               <div className="relative h-24 rounded-lg overflow-hidden m-2">
-                <img
+                <Image
                   src="/images/dalle.png"
                   alt="Image 3"
-                  layout="fill"
+                  // layout="fill"
                   objectFit="cover"
+                  width= {500}
+                  height= {500}
                 />
               </div>
               {/* Image 4 */}
               <div className="relative h-24 rounded-lg overflow-hidden m-2">
-                <img
+                <Image
                   src="/images/dalle.png"
                   alt="Image 4"
-                  layout="fill"
+                  // layout="fill"
                   objectFit="cover"
+                  width= {500}
+                  height= {500}
                 />
               </div>
             </div>
@@ -533,38 +555,46 @@ export default function Page() {
             <div className="grid grid-cols-2 rounded-xl">
               {/* Image 1 */}
               <div className="relative h-24 rounded-lg overflow-hidden m-2">
-                <img
+                <Image
                   src="/images/dalle.png"
                   alt="Image 1"
-                  layout="fill"
+                  // layout="fill"
                   objectFit="cover"
+                  width= {500}
+                  height= {500}
                 />
               </div>
               {/* Image 2 */}
               <div className="relative h-24 rounded-lg overflow-hidden m-2">
-                <img
+                <Image
                   src="/images/dalle.png"
                   alt="Image 2"
-                  layout="fill"
+                  // layout="fill"
                   objectFit="cover"
+                  width= {500}
+                  height= {500}
                 />
               </div>
               {/* Image 3 */}
               <div className="relative h-24 rounded-lg overflow-hidden m-2">
-                <img
+                <Image
                   src="/images/dalle.png"
                   alt="Image 3"
-                  layout="fill"
+                  // layout="fill"
                   objectFit="cover"
+                  width= {500}
+                  height= {500}
                 />
               </div>
               {/* Image 4 */}
               <div className="relative h-24 rounded-lg overflow-hidden m-2">
-                <img
+                <Image
                   src="/images/dalle.png"
                   alt="Image 4"
-                  layout="fill"
+                  // layout="fill"
                   objectFit="cover"
+                  width= {500}
+                  height= {500}
                 />
               </div>
             </div>

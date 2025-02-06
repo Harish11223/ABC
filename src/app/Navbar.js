@@ -57,13 +57,13 @@ export default function Navbar() {
                         <div className="flex items-center bg-slate-200 rounded-full px-2 py-1">
                             <div className="flex -space-x-2">
                                 <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
-                                    <img src="/images/profile.jpg" alt="Remy Sharp" />
+                                    <Image src="/images/profile.jpg" alt="Remy Sharp" width= {500} height= {500} objectFit='cover' />
                                 </div>
                                 <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
-                                    <img src="/images/minee.jpg" alt="Travis Howard" />
+                                    <Image src="/images/minee.jpg" alt="Travis Howard" width= {500} height= {500} objectFit='cover' />
                                 </div>
                                 <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
-                                    <img src="/images/photo.jpg" alt="Agnes Walker" />
+                                    <Image src="/images/photo.jpg" alt="Agnes Walker" width= {500} height= {500} objectFit='cover' />
                                 </div>
                             </div>
 
