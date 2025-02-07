@@ -153,15 +153,6 @@ export default function Page() {
             <br />
             and professional success.
           </span>
-          <span className="items-center justify-center text-md">
-            Experience top-notch English language with passionate teachers,
-            interactive
-            <br />
-            lessons, and modern facilities at our school. Empower skills for
-            personal
-            <br />
-            and professional success.
-          </span>
         </div>
 
         <div className="flex justify-center items-center">
