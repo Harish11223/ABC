@@ -15,9 +15,9 @@ export default function Navbar() {
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse mx-2">
                         <Image
-                            src="https://flowbite.com/docs/images/logo.svg"
-                            alt="Flowbite Logo"
-                            className="h-8"
+                            src="/images/Image.png"
+                            alt="ABC logo"
+                            className="h-8 bg-gray-100"
                             width={32}
                             height={32}
                         />
